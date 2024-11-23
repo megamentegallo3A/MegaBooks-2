@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MegaBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lore</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">História</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Jogabilidade</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Guia Iniciante</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da MegaBooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Mega</b>Books</h1>
+    </div>
+ 
+    <ul class="opções">
+      <input type="checkbox" id="opções-menu" class="opções__botão">
+      <label for="opções-menu">
+      <li class="opções__item">Categorias</li>
+      </label>
+
+      <ul class="lista-menu">
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Lore</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">História</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Jogabilidade</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Guia Iniciante</a>
+        </li>
+      </ul>
+
+      <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+      <li class="opções__item"><a href="#" class="opções__link">Minha Biblioteca</a></li>
+
+    </ul>
+
+    <div class="container">
+      <a href="#">
+        <img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem container__imagem-transparente">
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha Mochila</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Quer ajuda para começar?</h2>
+    <p class="banner__texto">Encontre em nossa biblioteca o que precisa para melhorar sua jogabilidade!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual a boa?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+         <div class="carrossel__container">
+         <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/historiaambessa.svg"
+            alt="Livro sobre a história de Ambessa"></div>
+        <div class="swiper-slide"><img src="img/guialol1.svg" alt="Guia de LoL"></div>
+        <div class="swiper-slide"><img src="img/historiaashe.svg" alt="Livro sobre a história de Ashe">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/historiazed.svg" alt="Livro sobre a história de Zed" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/timeslol.svg" alt="Livro sobre times de LOL" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/runeterra.svg" alt="Livro sobre a lore de runeterra" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Guia de LOL para iniciantes, Aliança nivel A</h2>
+          <p class="descrição__texto">
+            Construindo players melhores !
+          </p>
+        </div>
+        <img src="img/Angular.svg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/historiaambessa.svg"
+            alt="Livro sobre a historia de Ambessa"></div>
+        <div class="swiper-slide"><img src="img/guialol1.svg" alt="Guia de LOL">
+        </div>
+        <div class="swiper-slide"><img src="img/historiaashe.svg" alt="Livro sobre a história de Ashe">
+        </div>
+        <div class="swiper-slide"><img src="img/historiazed.svg" alt="Livro sobre a história de Zed"></div>
+        <div class="swiper-slide"><img src="img/timeslol.svg" alt="Livro sobre times de LOL"></div>
+        <div class="swiper-slide"><img src="img/runeterra.svg" alt="Livro sobre a lore de runeterra"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Jogadora do Mês</h3>
+          <h2 class="descrição__titulo-livro">Júlia Mayumi Nakamura</h2>
+          <p class="descrição__texto">Jogadora profissional e influenciadora, membro do grande time NTZ
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/mayumi 1.svg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Atualizações</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Proplayers</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Guia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Times</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Jogabilidade</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">História</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Lore</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+    <h2 class="contato__titulo">Fique sabendo das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de e-books, novos livros, promoções e outros.</p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Mega Grupo</h2>
+
+    <ul class="lista-rodapé">
+    <li class="lista-rodapé__titulo">Desenvolvedores</li>
+    <li class="lista-rodapé__item">
+      <img src="img/Volibear League of Legends sad hamster 1.svg" alt="dev voli">
+      <a href="#" class="lista-rodapé__link">Little Voli</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/Sad hamster Pyke league of legends 1.svg" alt="dev pyke">
+      <a href="#" class="lista-rodapé__link">Little Pyke</a> 
+    </li>
+    </ul>
+    
+    <ul class="lista-rodapé">
+    <li class="lista-rodapé__titulo">Jogadores</li>
+    <li class="lista-rodapé__item">
+      <img src="img/Draven Coquette 1.svg" alt="player draven">
+      <a href="#" class="lista-rodapé__link">Draven Coquette</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/crystal rose lux  ｡･___･ﾟ★ 1.svg" alt="player lux">
+      <a href="#" class="lista-rodapé__link">Lux Casada</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/Xayah icon 1.svg" alt="player xayah">
+      <a href="#" class="lista-rodapé__link">Xayah Estelar</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/SG LoR - icons 1.svg" alt="player soraka">
+      <a href="#" class="lista-rodapé__link">Soraka Estelar</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/commander caitlyn ⋆ ˚｡⋆౨ৎ˚ 1.svg" alt="player caitlyn">
+      <a href="#" class="lista-rodapé__link">Bolsonara</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/Brawler Vi 1.svg" alt="player vi">
+      <a href="#" class="lista-rodapé__link">Emo Revoltada</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/pool party dr_ mundo 1.svg" alt="player mundo">
+      <a href="#" class="lista-rodapé__link">Mundo Verão</a> 
+    </li>
+    </ul>
+    
+    <ul class="lista-rodapé">
+    <li class="lista-rodapé__titulo">Apoiadores</li>
+    <li class="lista-rodapé__item">
+      <img src="img/kda all out akali 1.svg" alt="adm akali">
+      <a href="#" class="lista-rodapé__link">Akali</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/evelynn.svg" alt="adm evelynn">
+      <a href="#" class="lista-rodapé__link">Evelynn</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/kda all out superstar seraphine 1.svg" alt="adm seraphine">
+      <a href="#" class="lista-rodapé__link">Seraphine</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/kda all out ahri 1.svg" alt="adm ahri">
+      <a href="#" class="lista-rodapé__link">Ahri</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/kai sa.svg" alt="adm kaisa">
+      <a href="#" class="lista-rodapé__link">Kai sa</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/Snow Moon Morgana 1.svg" alt="adm morgana">
+      <a href="#" class="lista-rodapé__link">Morgana</a> 
+    </li>
+    <li class="lista-rodapé__item">
+      <img src="img/- Hearsteel, Kayn - 1.svg" alt="adm Kayn">
+      <a href="#" class="lista-rodapé__link">Kayn</a> 
+    </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
